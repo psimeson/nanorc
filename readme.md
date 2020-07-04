@@ -85,7 +85,10 @@ Add your preferable languages one by one into the file. For example:
 ## C/C++
 include "~/.nano/c.nanorc"
 ```
-
+```
+sudo cp ~/nanorc/file.nanorc /usr/share/nano/
+find /usr/share/nano/ -iname "*.nanorc" -exec echo include {} \; >> ~/.nanorc
+```
 ## Tricks & Tweaks
 
 ### MacOS
